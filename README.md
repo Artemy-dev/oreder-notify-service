@@ -17,3 +17,14 @@ docker ps
 Остановка и запуск контейнера:
 docker stop rabbitmq
 docker start rabbitmq
+
+Установка зависимостей:
+pip install fastapi uvicorn faststream
+pip install faststream[rabbit]
+pip install aiogram
+pip install python-dotenv
+
+
+Запуск API (http://127.0.0.1:8000/docs): 
+uvicorn api:app --reload
+
